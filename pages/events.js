@@ -2,8 +2,6 @@ import Section from '../components/section'
 import Layout from '../components/layout'
 import Intro from '../components/intro'
 
-import SpeakerCard from '../components/speakerCard'
-
 class student extends React.Component {
 
     constructor(props) {
@@ -13,91 +11,58 @@ class student extends React.Component {
             speakers: []
         }
     }
-    
-    async loadSpeakers() {
-        const s = await import('../data/speakers.json')
-        var lineUp = ['Phil Hawksworth', 'Charlie Gerard', 'Sarah Drasner', 'Vitaly Friedman', 'Shirley Wu','Maximiliano Firtman', 'Peter Müller']
-        
-        this.setState({
-            speakers: s.filter(s => lineUp.includes(s.name))
-        })
-    }
 
     componentDidMount() {
-        this.loadSpeakers();
     }
-
 
     render() {   
         return (
-            <Layout title="ColdFront Student">
+            <Layout title="Prefront: Special TypeScript event before ColdFront">
                 <Section>
                     <Intro
-                        title="ColdFront Student"
-                        text="A mini-event for students in Copenhagen in collaboration with IT University of Copenhagen, ITB and Prosa"
+                        title="Prefront: Special TypeScript event on the night before ColdFront"
+                        text="A special TypeScript event on the night before ColdFront with Anders Hejlsberg, architect on TypeScript and Technical Fellow at Microsoft"
+                        img="/static/images/splash-prefront.png"
                     />
                 </Section>
                 <Section bright>
                     <div className="page-scholarships narrow">
                         <div className="btn-action font-bitblox">
-                            <a className="btn btn-primary btn-primary-shadow glitch" data-text="REGISTER" href="https://ti.to/coldfront/coldfront-2018/with/hvm92aogvzk">
+                            <a className="btn btn-primary btn-primary-shadow glitch" data-text="REGISTER" href="https://ti.to/coldfront/coldfront-2018/with/rqxsxje1syw">
                            REGISTER <i className="fas fa-arrow-right"></i>
                             </a>
                         </div>
                                             
-                        <p>In collaboration with IT University of Copenhagen, ITB and Prosa, we are inviting the best danish frontend students to join us for <strong>ColdFront Student</strong>, a mini-event taking place on November 15th, as a part of our <a href="/community-workshop-day">Community and Workshop day</a>.</p>
-                        <p>The event will be theme around <strong>career choice</strong>, where leading frontend developers will share their experiences with creating digital products and working with develop processes, and share career advice in a panel debate moderated by this year Coldfront host Phil Hawksworth.</p>
+                        <p>We are happy to be able to invite you to a special ColdFront event which we call <strong>PreFront</strong> on the night before ColdFront with our very own danish <a href="https://twitter.com/ahejlsberg?">Anders Hejlsberg</a> from Microsoft.</p>
+                        <p>The event will take place on <strong>November 12th</strong> where Anders will give a talk about TypeScript. The event will be hosted at the ColdFront venue, VEGA, where we will be opening up Ideal Bar for the evening.</p>
+                           
+                        <p>This is a unique opportunity to meet one of the words most renowned programming langauge designers. Anders has worked on development tools for over 30 years and is the original designer of C#, Delphi, and Turbo Pascal. Today he's the lead archiect on TypeScript.</p>
 
-                        <p><strong>ColdFront Student</strong> is all about giving you the opportunity to meet some of the speakers from ColdFront 18.</p>
-
-                        <p>This is a unique opportunity for a meet-up between the industry and the next generation of frontend developers. So be prepared for an intense day dedicated to the future of frontend!</p>
+                        <p>Space is limited, so grab a spot while you can!</p>
                         
-                        <div className="images">
-                            <img src="/static/images/practical/itu.jpg" />
-                         </div>
-
+                        <div className="lineup">
+    
+                        </div>
                         <h3>Program</h3> 
                         <ul>
-                            <li>15:00 : 15:15 - Opening talk by <a href="https://twitter.com/firt">Maximiliano Firtman</a></li>
-                            <li>15:15 : 16:00 - Panel debate on career choice</li>
-                            <li>16:00 : 16:30 - Q/A</li>
-                            <li>16:30 : 17:00 - Networking</li>
+                            <li>16:45 : 17:15 - Welcome at Ideal Bar.</li>
+                            <li>17:15 : 17:45 - Talk by Anders Hejlsberg.</li>
+                            <li>18:00 : 24:00 - Networking at Mikkeller Bar in the meat packing district. </li>
+                            <li>18:00 : 24:00 - (ColdFront crew + speakers will join after speakers dinner)</li>
                         </ul>
 
-                        <h3>Panel debate with</h3>
-
-                        <div className="lineup">
-                            { this.state.speakers.map((speaker, idx) => {
-                                return (
-                                    <SpeakerCard
-                                        speakerImage={speaker.image}
-                                        speakerName={speaker.name}
-                                        speakerTitle={speaker.title}
-                                        speakerPosition={speaker.position}
-                                        twitter={speaker.twitter}
-                                        hideTheme="true"
-                                    />                           
-                                )
-                            })}
-                        </div>
+                        <div className="images">
+                            <img src="/static/images/idealbar.jpg" />
+                         </div>                        
 
                         <h3>Practical details</h3>
 
-                        <p>ColdFront Student will take place on <strong>November 15th 15:00-17:00</strong> at ITU, <a href="https://goo.gl/maps/WoScNoZSUNo">Rued Langgaards Vej 7 2300 København S</a></p>
+                        <p>PreFront will take place on <strong>November 12th 16:45-18:00</strong> at <a href="https://goo.gl/maps/LMosBszDEdN2">Ideal Bar, Enghavevej 40, 1674 København V</a>. Networking will continue at <a href="http://mikkeller.dk/location/warpigs/">Mikkeller Warpigs Brewpub</a> in the meat packing district of Copenhagen.</p>
                         
                         <div className="btn-action font-bitblox">
-                            <a className="btn btn-primary btn-primary-shadow glitch" data-text="REGISTER" href="https://ti.to/coldfront/coldfront-2018/with/hvm92aogvzk">
+                            <a className="btn btn-primary btn-primary-shadow glitch" data-text="REGISTER" href="https://ti.to/coldfront/coldfront-2018/with/rqxsxje1syw">
                            REGISTER <i className="fas fa-arrow-right"></i>
                             </a>
-                        </div>
-                    </div>
-
-                    <div className="narrow">
-                        <p>ColdFront Student is organized in collaboration with:</p>
-                        <div id="help">
-                            <img id="prosa" src="/static/images/logos/PROSA.png" />
-                            <img id="itb" src="/static/images/logos/itb.png" />
-                            <img id="itu" src="/static/images/logos/itu.png" />
                         </div>
                     </div>
 
