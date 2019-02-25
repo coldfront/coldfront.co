@@ -27,7 +27,7 @@ export default ({ children }) => (
                 <h2>ColdFront 2019</h2>
                 <p>Copehagen's front-end conference about the future of front-end and interfaces.</p>
                 <p className="location">Copenhagen</p>
-                <p className="date">November 25 & 26 2019</p>
+                <p className="date">November 26 + 27 + 28 2019</p>
                 <a className="btn btn-primary btn-primary-shadow ticket" data-text="Our events" href="https://2019.coldfront.co">Details</a>        
             </div>
 
