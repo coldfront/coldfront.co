@@ -13,7 +13,7 @@ export default () => (
 
             <div className="navbar-collapse collapse" id="collapsingNavbar" data-toggle="collapse" data-target="#collapsingNavbar" >
                 <ul className="navbar-nav">
-                    <li className="nav-item"><Link href="/eventss"><a className="nav-link">Events</a></Link></li> 
+                    <li className="nav-item"><a className="nav-link" href="/#events">Events</a></li> 
                     <li className="nav-item"><Link href="/why-coldfront"><a className="nav-link">Why ColdFront?</a></Link></li>
                     <li className="nav-item"><Link href="/about"><a className="nav-link">About</a></Link></li>
                 </ul>

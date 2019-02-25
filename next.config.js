@@ -5,6 +5,7 @@ module.exports = {
             '/': { page: '/' },
             '/about': { page: '/about' },
             '/events': { page: '/events' },
+            '/why-coldfront': { page: '/why-coldfront' },
         }
     }
 }
