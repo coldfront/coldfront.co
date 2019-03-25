@@ -17,11 +17,11 @@ export default ({ children }) => (
           developer and designer.
         </p>
         <p className="location">Copenhagen</p>
-        <p className="date">April 20 & 21 2019</p>
+        <p className="date">June 3 & 4 2019</p>
         <a
           className="btn btn-primary btn-primary-shadow ticket"
           data-text="Our events"
-          href="/events/spring-masterclasses"
+          href="/events/summer-masterclasses"
         >
           Details
         </a>
