@@ -5,7 +5,7 @@ module.exports = {
       "/": { page: "/" },
       "/about": { page: "/about" },
       "/events": { page: "/events" },
-      "/events/spring-masterclasses": { page: "/events/spring-masterclasses" },
+      "/events/summer-masterclasses": { page: "/events/summer-masterclasses" },
       "/why-coldfront": { page: "/why-coldfront" }
     };
   }
